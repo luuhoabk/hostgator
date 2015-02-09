@@ -158,11 +158,11 @@ else
 				<div class="container"  style="position: relative;">
 					<di class="row-fluid">
 						<div class="span2">
-							<img style="position: relative; margin-top: -99px; bottom: 0;" class="header-top-logo img-responsive" src="../templates/hostgator/images/logo-dragon.png" alt=""/>
+							<img style="position: relative; margin-top: -107px; bottom: 0;" class="header-top-logo img-responsive" src="../templates/hostgator/images/logo-dragon.png" alt=""/>
 						</div>
 						<div class="span9 clearfix">
 							<?php if ($this->countModules('position-1')) : ?>
-								<nav class="navigation margin-bottom-0" role="navigation">
+								<nav class="navigation margin-bottom-0 padding-tb-0" role="navigation">
 									<jdoc:include type="modules" name="position-1" style="none" />
 								</nav>
 							<?php endif; ?>

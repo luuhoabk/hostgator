@@ -80,4 +80,17 @@ header .header-bottom{
 
 /*----------------------*/
 footer.footer{ background-color: #0171bc; padding: 10px 0px;}
+.nav-pills > li{padding: 0px 10px;}
 
+.nav-pills > li > a, .nav-pills > li.current.active  > a{
+	color: #fff;
+	font-weight: bold;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.nav-pills > li.current.active  > a,.nav-pills > li.current.active  > a:hover, .nav-pills > li > a:hover{
+	background: transparent;
+	border-bottom: 2px solid #ffcb08;
+	border-radius: 0px;
+}
