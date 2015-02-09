@@ -27,6 +27,16 @@
 	<positions>
 		<position>banner</position>
 		<position>debug</position>
+		<position>body-left-up</position>
+		<position>body-left-down</position>
+		<position>body-right-item1</position>
+		<position>body-right-item2</position>
+		<position>body-right-item3</position>
+		<position>body-right-item4</position>
+		<position>body-right-item5</position>
+		<position>body-bottom-item1</position>
+		<position>body-bottom-item2</position>
+		<position>body-bottom-item3</position>
 		<position>position-0</position>
 		<position>position-1</position>
 		<position>position-2</position>
@@ -42,7 +52,8 @@
 		<position>position-12</position>
 		<position>position-13</position>
 		<position>position-14</position>
-		<position>footer</position>
+		<position>footer-sub-nav</position>
+		<position>footer-social</position>
 	</positions>
 	<languages folder="language">
 		<language tag="en-GB">en-GB/en-GB.tpl_hostgator.ini</language>

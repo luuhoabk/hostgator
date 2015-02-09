@@ -180,59 +180,68 @@ else
 					<div class="row">
 						<div class="span8 col-xs-8">
 							<div class="body-left" style="height: 500px;">
-								<div class="span5" style="color: #fff; margin-top: 180px; margin-left: 130px;">
-									<h2 style="font-size: 2.4vw;"><span style="color: #fdc04c;">HostGator</span> WebHosting</h2>
-									<p style="text-align: justify; font-size: 0.9vw;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morlci non pretium metus, sit amet cursus nisi. Nam turpis, rhoncus curus iaculi a Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit amet cursus nisi. Nam turpis,</p>
+								<div class="span5">
+									<?php if ($this->countModules('body-left-up')) : ?>
+										<jdoc:include type="modules" name="body-left-up"/>
+									<?php endif; ?>
 								</div>
-								<div class="span4 text-center" style="margin-left: 185px; margin-top: 30px; color: #fff;">
-									<h2 style="font-size: 3em;">HGTR17</h2>
-									<p style="font-size: 1.2em; font-weight: bold;">60 Days Free Money Back Guarantee</p>
+								<div class="span4 text-center">
+									<?php if ($this->countModules('body-left-down')) : ?>
+										<jdoc:include type="modules" name="body-left-down"/>
+									<?php endif; ?>
 								</div>
 							</div>
 						</div>
 						<div class="span4 col-xs-4">
 							<div class="row body-right">
 								<ul>
+									<?php if ($this->countModules('body-right-item1')) : ?>
 									<li class="box-right-1">
 										<div class="row margin-left-0">
 											<div class="item-wrapper">
-												<h2 class="margin-0">GTREKT46</h2>
-												<p>60% off in your next purchase</p>
+												<jdoc:include type="modules" name="body-right-item1"/>
 											</div>
 										</div>
 									</li>
+									<?php endif; ?>
+									<?php if ($this->countModules('body-right-item2')) : ?>
 									<li class="box-right-2">
 										<div class="row margin-left-0 item-wrapper">
 											<div class="item-wrapper">
-												<h2 class="margin-0">MAMAMO14</h2>
-												<p>60% off in your next purchase</p>
+												<jdoc:include type="modules" name="body-right-item2"/>
 											</div>
 										</div>
 									</li>
+									<?php endif; ?>
+
+									<?php if ($this->countModules('body-right-item3')) : ?>
 									<li class="box-right-3">
 										<div class="row margin-left-0 item-wrapper">
 											<div class="item-wrapper">
-												<h2 class="margin-0">RYUKSR2</h2>
-												<p>60% off in your next purchase</p>
+												<jdoc:include type="modules" name="body-right-item3"/>
 											</div>
 										</div>
 									</li>
+									<?php endif; ?>
+									<?php if ($this->countModules('body-right-item4')) : ?>
+
 									<li class="box-right-4">
 										<div class="row margin-left-0 item-wrapper">
 											<div class="item-wrapper">
-												<h2 class="margin-0">MAMAMO15</h2>
-												<p>60% off in your next purchase</p>
+												<jdoc:include type="modules" name="body-right-item4"/>
 											</div>
 										</div>
 									</li>
+									<?php endif; ?>
+									<?php if ($this->countModules('body-right-item5')) : ?>
 									<li class="box-right-5">
 										<div class="row margin-left-0 item-wrapper">
 											<div class="item-wrapper">
-												<h2 class="margin-0">NYAWRO7</h2>
-												<p>60% off in your next purchase</p>
+													<jdoc:include type="modules" name="body-right-item5"/>
 											</div>
 										</div>
 									</li>
+									<?php endif; ?>
 								</ul>
 							</div>
 
@@ -261,10 +270,9 @@ else
 								<img class="header-top-logo img-responsive" src="../templates/hostgator/images/icon-bottom-1.png" alt=""/>
 							</div>
 							<div class="item-text text-center">
-								<h2>Lorem Lipsum</h2>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morlci non pretium metus, sit amet cursus nisi. Nam turpis, rhoncus curus iaculi a
-								</p>
+								<?php if ($this->countModules('body-bottom-item1')) : ?>
+									<jdoc:include type="modules" name="body-bottom-item1"/>
+								<?php endif ?>
 							</div>
 						</div>
 						<div class="span4 body-box-bottom-item">
@@ -272,10 +280,9 @@ else
 								<img class="header-top-logo img-responsive" src="../templates/hostgator/images/icon-bottom-2.png" alt=""/>
 							</div>
 							<div class="item-text text-center">
-								<h2>Lorem Lipsum</h2>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morlci non pretium metus, sit amet cursus nisi. Nam turpis, rhoncus curus iaculi a
-								</p>
+								<?php if ($this->countModules('body-bottom-item2')) : ?>
+									<jdoc:include type="modules" name="body-bottom-item2"/>
+								<?php endif ?>
 							</div>
 						</div>
 						<div class="span4 body-box-bottom-item">
@@ -283,10 +290,9 @@ else
 								<img class="header-top-logo img-responsive" src="../templates/hostgator/images/icon-bottom-3.png" alt=""/>
 							</div>
 							<div class="item-text text-center">
-								<h2>Lorem Lipsum</h2>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morlci non pretium metus, sit amet cursus nisi. Nam turpis, rhoncus curus iaculi a
-								</p>
+								<?php if ($this->countModules('body-bottom-item3')) : ?>
+									<jdoc:include type="modules" name="body-bottom-item3"/>
+								<?php endif ?>
 							</div>
 						</div>
 					</div>
@@ -301,12 +307,19 @@ else
 	<footer class="footer" role="contentinfo">
 		<div class="container">
 			<div class="row" style="margin-left:-30px;">
-				<div class="span8">
-					<div style="color: #fdc04c;">Site map | term of service | Privacy Policy</div>
+				<div class="span8 menu-footer">
+					<?php if ($this->countModules('footer-sub-nav')) : ?>
+						<div style="color: #fdc04c;">
+							<jdoc:include type="modules" name="footer-sub-nav"/>
+						</div>
+					<?php endif; ?>
+
 					<div style="color: #fff;">Copyright &copy; <?php echo date('Y'); ?> <?php echo $sitename; ?></div>
 				</div>
 				<div class="span4 text-right">
-					modsd
+					<?php if ($this->countModules('footer-social')) : ?>
+							<jdoc:include type="modules" name="footer-social"/>
+					<?php endif; ?>
 				</div>
 			</div>
 		</div>
