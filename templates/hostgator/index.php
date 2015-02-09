@@ -177,7 +177,7 @@ else
 		<aritcle>
 			<div class="wrapper-body">
 				<div class="container">
-					<div class="row">
+					<div class="row" style="margin-top: 60px;">
 						<div class="span8 col-xs-8">
 							<div class="body-left" style="height: 500px;">
 								<div class="span5">
@@ -237,7 +237,7 @@ else
 									<li class="box-right-5">
 										<div class="row margin-left-0 item-wrapper">
 											<div class="item-wrapper">
-													<jdoc:include type="modules" name="body-right-item5"/>
+												<jdoc:include type="modules" name="body-right-item5"/>
 											</div>
 										</div>
 									</li>
