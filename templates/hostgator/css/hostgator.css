@@ -116,3 +116,24 @@ footer.footer{ background-color: #0171bc; padding: 10px 0px;}
 	background-color: transparent;
 	color: #fff!important;
 }
+.menu-main{
+	border: 0px;
+	background: transparent!important;
+	border-radius: 0px;
+}
+.navbar-inner.menu-main{
+	box-shadow: none!important;
+	-webkit-box-shadow: none!important;
+	-moz-box-shadow: none!important;
+}
+ul#top-menu > li{padding: 0px 5px;}
+ul#top-menu > li > a{
+	text-shadow: none;
+	color: #fff;
+}
+ul#top-menu > li.current.active > a,ul#top-menu > li > a:hover{
+	color: #ffcb08;
+	background: transparent;
+	box-shadow: none;
+	border-bottom: 2px solid #ffcb08;
+}

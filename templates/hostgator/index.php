@@ -138,7 +138,7 @@ else
 	<!-- Body -->
 	<div class="body">
 		<!-- Header -->
-		<header class="header header-inner" role="banner">
+		<header class="header header-inner margin-bottom-0" role="banner">
 
 			<div class="header-top"">
 				<div class="container">
@@ -149,8 +149,6 @@ else
 							<img class="header-top-logo img-responsive margin-tb-10" style="margin-left: -35px;" src="../templates/hostgator/images/header-text-coupon-best.png" alt=""/>
 						</div>
 					</div>
-
-
 				</div>
 
 			</div>
@@ -160,20 +158,57 @@ else
 						<div class="span2">
 							<img style="position: relative; margin-top: -107px; bottom: 0;" class="header-top-logo img-responsive" src="../templates/hostgator/images/logo-dragon.png" alt=""/>
 						</div>
-						<div class="span9 clearfix">
-							<?php if ($this->countModules('position-1')) : ?>
-								<nav class="navigation margin-bottom-0 padding-tb-0" role="navigation">
-									<jdoc:include type="modules" name="position-1" style="none" />
-								</nav>
+						<div class="span9 clearfix margin-left-0">
+							<?php if ($this->countModules('position-1')): ?>
+								<div class="navbar margin-bottom-0">
+									<div class="navbar-inner menu-main">
+										<div class="container">
+											<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+											</a>
+											<div class="nav-collapse collapse">
+												<jdoc:include type="modules" name="position-1" style="none" />
+											</div>
+										</div>
+									</div>
+								</div><!--End navbar-->
 							<?php endif; ?>
+
 						</div>
 					</di>
 
 				</div>
 			</div>
 		</header>
-<!-------------------------------------------------------->
-<!--		<jdoc:include type="modules" name="banner" style="xhtml" />-->
+
+<!---------------------------------------------------------->
+<?php if ($this->params->get('sethomepage') == 0) : ?>
+	<article style="background-color: #daedf8;">
+		<div class="container">
+			<div class="row"  style="position: relative">
+				<div class="span8">
+					<h1 style="color: #0564a5; font-size: 3em; position: absolute; bottom: 30px;">Insert a great title here</h1>
+				</div>
+				<div class="span4">
+					<img class="header-top-logo img-responsive" src="../templates/hostgator/images/home-content-top.png" alt=""/>
+				</div>
+			</div>
+		</div>
+	</article>
+	<div class="container margin-bottom-10">
+		<main id="content" role="main" class="<?php echo $span; ?> margin-left-0 padding-5">
+			<!-- Begin Content -->
+			<jdoc:include type="modules" name="position-3" style="xhtml" />
+			<jdoc:include type="message" />
+			<jdoc:include type="component"/>
+			<jdoc:include type="modules" name="position-2" style="none" />
+			<!-- End Content -->
+		</main>
+	</div>
+<?php else :  ?>
+ <jdoc:include type="modules" name="banner" style="xhtml" />
 		<aritcle>
 			<div class="wrapper-body">
 				<div class="container">
@@ -250,13 +285,13 @@ else
 				</div>
 			</div>
 		</aritcle>
-<!-------------------------------------------------------->
+<!---------------------------------------------------------->
 		<article>
 			<div class="row text-center" style="background-color: #0171bc;" >
 				<h1 style="font-weight: bold; color: #fff;">About <span style="color: #fdc04c;"> HostGator </span><span style="font-size: 18px;"> WebHosting</span></h1>
 			</div>
 		</article>
-<!-------------------------------------------------------->
+<!---------------------------------------------------------->
 		<article>
 			<div class="row body-box-bottom">
 				<div class="container">
@@ -299,10 +334,9 @@ else
 				</div>
 			</div>
 		</article>
-<!-------------------------------------------------------->
-
-
-	</div><!-- end body -->
+<!--<!-------------------------------------------------------->
+	<?php endif; ?>
+	</div><!-- end body
 	<!-- Footer -->
 	<footer class="footer" role="contentinfo">
 		<div class="container">
@@ -325,5 +359,6 @@ else
 		</div>
 	</footer>
 	<jdoc:include type="modules" name="debug" style="none" />
+
 </body>
 </html>
