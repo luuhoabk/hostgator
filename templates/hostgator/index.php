@@ -95,6 +95,10 @@ else
 		<style type="text/css">
 			h1,h2,h3,h4,h5,h6,.site-title{
 				font-family: '<?php echo str_replace('+', ' ', $this->params->get('googleFontName')); ?>', sans-serif;
+				font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
+				font-weight: 800;
+				font-style: normal;
+				letter-spacing: .5px;
 			}
 		</style>
 	<?php endif; ?>
@@ -289,7 +293,7 @@ else
 <!---------------------------------------------------------->
 		<article class="clearfix">
 			<div class="row text-center" style="background-color: #0171bc;" >
-				<h1 style="font-weight: bold; color: #fff;">About <span style="color: #fdc04c;"> HostGator </span><span style="font-size: 18px;"> WebHosting</span></h1>
+				<h1 class="font-style-head" style="color: #fff;">About <span style="color: #fdc04c;"> HostGator </span><span style="font-size: 18px;"> WebHosting</span></h1>
 			</div>
 		</article>
 <!---------------------------------------------------------->

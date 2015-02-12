@@ -79,10 +79,15 @@ header .header-bottom{
 .body-box-bottom .body-box-bottom-note{padding: 30px 10px 30px 10px ;color: #aaa; font-size: 1.2em;}
 .body-box-bottom .body-box-bottom-item{margin-bottom: 20px;}
 .body-box-bottom .body-box-bottom-item .item-img{margin-bottom: -50px;}
-.body-box-bottom .body-box-bottom-item .item-text{background-color: #fff; border: 1px solid #ddd; padding: 45px 20px 5px 20px;}
+.body-box-bottom .body-box-bottom-item .item-text{background-color: #fff; border: 1px solid #ddd; padding: 45px 20px 40px 20px;}
 .body-box-bottom .body-box-bottom-item .item-text h2{color: #005793;font-weight: bold; font-size: 2em;}
 .body-box-bottom .body-box-bottom-item .item-text p{text-align: justify; color: #999; font-size: 1.1em;}
-
+.font-style-head{
+	font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
+	font-weight: 800;
+	font-style: normal;
+	letter-spacing: .5px;
+}
 /*----------------------*/
 footer.footer{ background-color: #0171bc; padding: 20px 0px;}
 .body-left .span5{color: #fff; margin-top: 180px; margin-left: 130px;}
@@ -106,13 +111,18 @@ footer.footer{ background-color: #0171bc; padding: 20px 0px;}
 .menu-footer-left div ul.nav.menu{margin-bottom: 5px;}
 .menu-footer-left div ul.nav.menu li{
 	display: inline-block!important;
-	padding-left: 10px;padding-right: 10px;
+	padding-left: 15px;padding-right: 15px;
 	border-right: 2px solid #fdc04c;
+
 
 }
 .menu-footer-left div ul.nav.menu li:first-child{padding-left: 0px;}
 .menu-footer-left div ul.nav.menu li:last-child{border-right: 0px;}
-.menu-footer-left div ul.nav.menu li a {color: #ffcb08!important;}
+.menu-footer-left div ul.nav.menu li a {
+	color: #ffcb08!important; font-size: 1.1em;
+	font-family: 'Gotham SSm A', 'Gotham SSm B', Arial, sans-serif!important;
+	font-style: normal;
+}
 .menu-footer-left div ul.nav.menu li:hover a{
 	background-color: transparent;
 	color: #fff!important;
@@ -145,3 +155,7 @@ img.header-top-logo{position: absolute; top: 0;  top: 4px;}
 .logo-top-center2{margin-left: -35px;}
 .title-content>h1{color: #0564a5; font-size: 3em; position: absolute; bottom: 30px;}
 .title-content-wrapper{position: relative;}
+.item-page .page-header{border-bottom: 0px;}
+.articleBody p{font-family: 'Gotham SSm A', 'Gotham SSm B', Arial, sans-serif!important;
+	font-style: normal; color: #aaa;}
+#content{margin-top: 30px;}
