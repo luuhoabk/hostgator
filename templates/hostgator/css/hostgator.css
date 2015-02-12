@@ -55,6 +55,7 @@ header .header-bottom{
 	background-repeat: no-repeat;
 	background-position:center;
 }
+.container-body{margin-top: 60px;}
 .wrapper-body{height: 600px; background-image: url('../images/bg-body.png'); background-size:100%;}
 .body-left{	background-image: url('../images/bg-box-left.png');background-size:contain;}
 .body-right{ background-image: url('../images/menu-right-col.png'); background-size:contain;}
@@ -83,7 +84,7 @@ header .header-bottom{
 .body-box-bottom .body-box-bottom-item .item-text p{text-align: justify; color: #999; font-size: 1.1em;}
 
 /*----------------------*/
-footer.footer{ background-color: #0171bc; padding: 10px 0px;}
+footer.footer{ background-color: #0171bc; padding: 20px 0px;}
 .body-left .span5{color: #fff; margin-top: 180px; margin-left: 130px;}
 .body-left .span4{margin-left: 185px; margin-top: -10px; color: #fff;}
 
@@ -101,18 +102,18 @@ footer.footer{ background-color: #0171bc; padding: 10px 0px;}
 	border-bottom: 2px solid #ffcb08;
 	border-radius: 0px;
 }
-/*.menu-footer > ul{clear: both;}*/
-.menu-footer div ul.nav.menu{margin-bottom: 5px;}
-.menu-footer div ul.nav.menu li{
+/*.menu-footer-left > ul{clear: both;}*/
+.menu-footer-left div ul.nav.menu{margin-bottom: 5px;}
+.menu-footer-left div ul.nav.menu li{
 	display: inline-block!important;
 	padding-left: 10px;padding-right: 10px;
 	border-right: 2px solid #fdc04c;
 
 }
-.menu-footer div ul.nav.menu li:first-child{padding-left: 0px;}
-.menu-footer div ul.nav.menu li:last-child{border-right: 0px;}
-.menu-footer div ul.nav.menu li a {color: #ffcb08!important;}
-.menu-footer div ul.nav.menu li:hover a{
+.menu-footer-left div ul.nav.menu li:first-child{padding-left: 0px;}
+.menu-footer-left div ul.nav.menu li:last-child{border-right: 0px;}
+.menu-footer-left div ul.nav.menu li a {color: #ffcb08!important;}
+.menu-footer-left div ul.nav.menu li:hover a{
 	background-color: transparent;
 	color: #fff!important;
 }
@@ -137,3 +138,10 @@ ul#top-menu > li.current.active > a,ul#top-menu > li > a:hover{
 	box-shadow: none;
 	border-bottom: 2px solid #ffcb08;
 }
+/*.header-top-logo{position: relative; margin-top: -84px!important; bottom: 0;}*/
+img.header-top-logo{position: absolute; top: 0;  top: 4px;}
+.header-right{position: relative; z-index: 10;}
+.logo-top-center1{margin-bottom: -30px; margin-left: -10px; z-index: 10;}
+.logo-top-center2{margin-left: -35px;}
+.title-content>h1{color: #0564a5; font-size: 3em; position: absolute; bottom: 30px;}
+.title-content-wrapper{position: relative;}

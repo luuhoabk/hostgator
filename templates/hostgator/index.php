@@ -45,6 +45,7 @@ $doc->addStyleSheet($this->baseurl . '/media/jui/css/bootstrap.min.css');
 $doc->addStyleSheet('templates/' . $this->template . '/css/boostrap.min.css');
 $doc->addStyleSheet('templates/' . $this->template . '/css/template.css');
 $doc->addStyleSheet('templates/' . $this->template . '/css/hostgator.css');
+$doc->addStyleSheet('templates/' . $this->template . '/css/responsive.css');
 
 // Load optional RTL Bootstrap CSS
 JHtml::_('bootstrap.loadCss', false, $this->direction);
@@ -138,25 +139,25 @@ else
 	<!-- Body -->
 	<div class="body">
 		<!-- Header -->
-		<header class="header header-inner margin-bottom-0" role="banner">
+		<header class="header header-inner margin-bottom-0" role="banner" style=" position: relative;">
 
 			<div class="header-top"">
 				<div class="container">
 					<div class="row">
 						<div class="span2"></div>
-						<div class="span10 margin-left-0">
-							<img class="header-top-logo img-responsive" style="margin-bottom: -30px; margin-left: -10px; z-index: 10; position: relative;" src="../templates/hostgator/images/header-text-hostgator.png" alt=""/>
-							<img class="header-top-logo img-responsive margin-tb-10" style="margin-left: -35px;" src="../templates/hostgator/images/header-text-coupon-best.png" alt=""/>
+						<div class="span10 margin-left-0 header-right">
+							<img class="img-responsive logo-top-center1" src="../templates/hostgator/images/header-text-hostgator.png" alt=""/>
+							<img class="img-responsive margin-tb-10 logo-top-center2" src="../templates/hostgator/images/header-text-coupon-best.png" alt=""/>
 						</div>
 					</div>
 				</div>
 
 			</div>
 			<div class="header-bottom">
-				<div class="container"  style="position: relative;">
+				<div class="container">
 					<di class="row-fluid">
-						<div class="span2">
-							<img style="position: relative; margin-top: -107px; bottom: 0;" class="header-top-logo img-responsive" src="../templates/hostgator/images/logo-dragon.png" alt=""/>
+						<div class="span2 header-left">
+							<img class="header-top-logo img-responsive" src="../templates/hostgator/images/logo-dragon.png" alt=""/>
 						</div>
 						<div class="span9 clearfix margin-left-0">
 							<?php if ($this->countModules('position-1')): ?>
@@ -185,14 +186,14 @@ else
 
 <!---------------------------------------------------------->
 <?php if ($this->params->get('sethomepage') == 0) : ?>
-	<article style="background-color: #daedf8;">
+	<article class="content-wrapper-page" style="background-color: #daedf8;">
 		<div class="container">
-			<div class="row"  style="position: relative">
-				<div class="span8">
-					<h1 style="color: #0564a5; font-size: 3em; position: absolute; bottom: 30px;">Insert a great title here</h1>
+			<div class="row title-content-wrapper">
+				<div class="span8 title-content">
+					<h1>Insert a great title here</h1>
 				</div>
 				<div class="span4">
-					<img class="header-top-logo img-responsive" src="../templates/hostgator/images/home-content-top.png" alt=""/>
+					<img class="img-responsive" src="../templates/hostgator/images/home-content-top.png" alt=""/>
 				</div>
 			</div>
 		</div>
@@ -209,10 +210,10 @@ else
 	</div>
 <?php else :  ?>
  <jdoc:include type="modules" name="banner" style="xhtml" />
-		<aritcle>
+		<aritcle class="clearfix">
 			<div class="wrapper-body">
 				<div class="container">
-					<div class="row" style="margin-top: 60px;">
+					<div class="row container-body">
 						<div class="span8 col-xs-8">
 							<div class="body-left" style="height: 500px;">
 								<div class="span5">
@@ -220,7 +221,7 @@ else
 										<jdoc:include type="modules" name="body-left-up"/>
 									<?php endif; ?>
 								</div>
-								<div class="span4 text-center">
+								<div class="span4 text-center body-left-down">
 									<?php if ($this->countModules('body-left-down')) : ?>
 										<jdoc:include type="modules" name="body-left-down"/>
 									<?php endif; ?>
@@ -286,7 +287,7 @@ else
 			</div>
 		</aritcle>
 <!---------------------------------------------------------->
-		<article>
+		<article class="clearfix">
 			<div class="row text-center" style="background-color: #0171bc;" >
 				<h1 style="font-weight: bold; color: #fff;">About <span style="color: #fdc04c;"> HostGator </span><span style="font-size: 18px;"> WebHosting</span></h1>
 			</div>
@@ -302,7 +303,7 @@ else
 					<div class="row body-box-bottom-item">
 						<div class="span4">
 							<div class="item-img text-center">
-								<img class="header-top-logo img-responsive" src="../templates/hostgator/images/icon-bottom-1.png" alt=""/>
+								<img class="img-responsive" src="../templates/hostgator/images/icon-bottom-1.png" alt=""/>
 							</div>
 							<div class="item-text text-center">
 								<?php if ($this->countModules('body-bottom-item1')) : ?>
@@ -312,7 +313,7 @@ else
 						</div>
 						<div class="span4 body-box-bottom-item">
 							<div class="item-img text-center">
-								<img class="header-top-logo img-responsive" src="../templates/hostgator/images/icon-bottom-2.png" alt=""/>
+								<img class="img-responsive" src="../templates/hostgator/images/icon-bottom-2.png" alt=""/>
 							</div>
 							<div class="item-text text-center">
 								<?php if ($this->countModules('body-bottom-item2')) : ?>
@@ -322,7 +323,7 @@ else
 						</div>
 						<div class="span4 body-box-bottom-item">
 							<div class="item-img text-center">
-								<img class="header-top-logo img-responsive" src="../templates/hostgator/images/icon-bottom-3.png" alt=""/>
+								<img class="img-responsive" src="../templates/hostgator/images/icon-bottom-3.png" alt=""/>
 							</div>
 							<div class="item-text text-center">
 								<?php if ($this->countModules('body-bottom-item3')) : ?>
@@ -341,7 +342,7 @@ else
 	<footer class="footer" role="contentinfo">
 		<div class="container">
 			<div class="row" style="margin-left:-30px;">
-				<div class="span8 menu-footer">
+				<div class="span8 menu-footer-left">
 					<?php if ($this->countModules('footer-sub-nav')) : ?>
 						<div style="color: #fdc04c;">
 							<jdoc:include type="modules" name="footer-sub-nav"/>
@@ -350,7 +351,7 @@ else
 
 					<div style="color: #fff;">Copyright &copy; <?php echo date('Y'); ?> <?php echo $sitename; ?></div>
 				</div>
-				<div class="span4 text-right">
+				<div class="span4 text-right menu-footer-right">
 					<?php if ($this->countModules('footer-social')) : ?>
 							<jdoc:include type="modules" name="footer-social"/>
 					<?php endif; ?>
